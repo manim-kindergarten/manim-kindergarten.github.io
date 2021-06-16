@@ -161,14 +161,14 @@ body {
 }
 
 .bili-link {
-    font-size: 36px;
+    font-size: 40px;
     transition: all 0.25s;
     line-height: 3.3rem;
     text-decoration: none;
 }
 
 .bili-link:hover {
-    font-size: 46px;
+    font-size: 50px;
     color: #5887FC;
     text-decoration: none;
 }
@@ -197,4 +197,22 @@ p.card-text {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+    .main-link {
+        font-size: 22px;
+    }
+    .main-link:hover {
+        font-size: 34px;
+    }
+    .bili-link {
+        font-size: 28px;
+    }
+    .bili-link:hover {
+        font-size: 42px;
+    }
+    .cover-heading {
+        font-size: 24px;
+    }
 }
