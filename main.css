@@ -196,4 +196,5 @@ body {
 p.card-text {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
