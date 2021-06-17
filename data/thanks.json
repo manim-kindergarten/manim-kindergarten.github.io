@@ -2,11 +2,11 @@
     {
         "name": "3Blue1Brown",
         "link": "https://space.bilibili.com/88461692",
-        "avatar": "data/avatar/3Blue1Brown.jpg"
+        "avatar": "https://cdn.jsdelivr.net/gh/manim-kindergarten/manim-kindergarten.github.io/data/avatar/3Blue1Brown.jpg"
     },
     {
         "name": "妈咪说MommyTalk",
         "link": "https://space.bilibili.com/223146252",
-        "avatar": "data/avatar/妈咪说MommyTalk.jpg"
+        "avatar": "https://cdn.jsdelivr.net/gh/manim-kindergarten/manim-kindergarten.github.io/data/avatar/妈咪说MommyTalk.jpg"
     }
 ]
