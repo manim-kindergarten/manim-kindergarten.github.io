@@ -199,7 +199,7 @@ p.card-text {
     flex-wrap: wrap;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .main-link {
         font-size: 22px;
     }
