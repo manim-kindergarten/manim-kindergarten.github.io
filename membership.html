@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <title>成员 | Manim Kindergarten</title>
+
+        <!-- Bootstrap core CSS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="shortcut icon" href="mk.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Righteous&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:600,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.2/css/all.min.css" />
+        <link rel="stylesheet" href="main.css" />
+        <style>
+          .member-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          .member-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.5em;
+            margin-bottom: 0.5em;
+            width: 4em;
+          }
+
+          .member-card:hover {
+            text-decoration: none;
+          }
+
+          .card-body {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        </style>
+    </head>
+    <body class="text-center">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead">
+                <div class="inner">
+                    <h3 class="masthead-brand">
+                        <a class="title-link" href="index.html">
+                            <span style="color: #8D5630">M</span>anim <span style="color: #29ABCA">K</span>indergarten
+                        </a>
+                    </h3>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i><span class="fn">&nbspHome</span></a>
+                        <a class="nav-link" href="docs.html"><i class="fas fa-book"></i><span class="fn">&nbspDocs</span></a>
+                        <a class="nav-link" href="tools.html"><i class="fas fa-cog"></i><span class="fn">&nbspTools</span></a>
+                        <a class="nav-link active" href="about.html"><i class="fas fa-info-circle"></i><span class="fn">&nbspAbout</span></a>
+                    </nav>
+                </div>
+            </header>
+
+            <main role="main" class="inner cover" style="text-align: left;">
+                <div class="accordion" id="accordionExample">
+                  <div class="shadow card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" style="color: black;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          核心成员
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div id="core-members" class="card-body">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shadow card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" style="color: black;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          哔哩哔哩up主
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div id="up-members" class="card-body">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shadow card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" style="color: black;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          特别鸣谢
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div id="thank-members" class="card-body">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </main>
+
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <p>
+                        Copyright &copy; 2021
+                        <strong>Manim Kindergarten</strong>
+                    </p>
+                </div>
+            </footer>
+            <script>
+              $(function() {
+                $.getJSON("data/core-members.json", function(data) {
+                  var $place = $("#core-members");
+                  var strHtml = ""
+                  $.each(data, function(index, info) {
+                    strHtml += '<a class="member-card" data-toggle="tooltip" data-placement="bottom" html="true" href="' + info["link"] + '" title="' + info["name"] + '">';
+                    strHtml += '<img class="member-avatar" src="' + info["avatar"] + '" /></a>';
+                  })
+                  $place.html(strHtml)
+                })
+              })
+              $(function() {
+                $.getJSON("data/up-members.json", function(data) {
+                  var $place = $("#up-members");
+                  var strHtml = "<p style='color: gray; font-size: 15px; flex-basis: 100%;'>按照昵称拼音排序，如有遗漏请联系鹤翔万里</p>"
+                  $.each(data, function(index, info) {
+                    strHtml += '<a class="member-card" data-toggle="tooltip" data-placement="bottom" html="true" href="' + info["link"] + '" title="' + info["name"] + '">';
+                    strHtml += '<img class="member-avatar" src="' + info["avatar"] + '" /></a>';
+                  })
+                  $place.html(strHtml)
+                })
+              })
+              $(function() {
+                $.getJSON("data/thanks.json", function(data) {
+                  var $place = $("#thank-members");
+                  var strHtml = ""
+                  $.each(data, function(index, info) {
+                    strHtml += '<a class="member-card" data-toggle="tooltip" data-placement="bottom" html="true" href="' + info["link"] + '" title="' + info["name"] + '">';
+                    strHtml += '<img class="member-avatar" src="' + info["avatar"] + '" /></a>';
+                  })
+                  $place.html(strHtml)
+                })
+              })
+              setTimeout(function () { $("[data-toggle='tooltip']").tooltip(); }, 300);
+            </script>
+        </div>
+    </body>
+</html>
