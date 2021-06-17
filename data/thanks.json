@@ -2,11 +2,11 @@
     {
         "name": "3Blue1Brown",
         "link": "https://space.bilibili.com/88461692",
-        "avatar": "https://i2.hdslb.com/bfs/face/8c8062b063092e72b49d4af4f55f4b61af48c151.jpg"
+        "avatar": "data/avatar/3Blue1Brown.jpg"
     },
     {
         "name": "妈咪说MommyTalk",
         "link": "https://space.bilibili.com/223146252",
-        "avatar": "https://i0.hdslb.com/bfs/face/c067d43c8f787e8ac110bf99df9145ac93bde923.jpg"
+        "avatar": "data/avatar/妈咪说MommyTalk.jpg"
     }
 ]
