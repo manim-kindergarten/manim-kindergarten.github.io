@@ -199,7 +199,24 @@ p.card-text {
     flex-wrap: wrap;
 }
 
-@media (max-width: 540px) {
+.changelang {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.5s;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.3)!important;
+}
+
+.changelang:hover {
+    color: #f8f9fa;
+    background-color: #212529;
+    border-color: #212529;
+}
+
+@media (max-width: 550px) {
     .main-link {
         font-size: 22px;
     }
@@ -214,5 +231,8 @@ p.card-text {
     }
     .cover-heading {
         font-size: 24px;
+    }
+    .changelang {
+        bottom: 60px;
     }
 }
