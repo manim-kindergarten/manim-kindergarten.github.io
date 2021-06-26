@@ -42,7 +42,7 @@ body {
 
 @font-face {
     font-family: Orbitron;
-    src: url(orbitron-bold.otf);
+    src: url(../assets/orbitron-bold.otf);
 }
 
 body {
@@ -175,7 +175,7 @@ body {
 
 @font-face {
     font-family: "iconfont"; /* Project id  */
-    src: url('iconfont.ttf?t=1623669608002') format('truetype');
+    src: url('../assets/iconfont.ttf?t=1623669608002') format('truetype');
 }
 
 .iconfont {
