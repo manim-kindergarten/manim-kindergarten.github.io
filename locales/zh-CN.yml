@@ -1,0 +1,80 @@
+button:
+  about: 关于
+  back: 返回
+  go: 确定
+  home: 首页
+  toggle_dark: 切换深色模式
+  toggle_langs: 切换语言
+  docs: 文档
+  tools: 工具
+intro:
+  desc: 固执己见的 Vite 项目模板
+  dynamic-route: 动态路由演示
+  hi: 你好，{name}
+  aka: 也叫
+  whats-your-name: 输入你的名字
+not-found: 未找到页面
+index:
+  links:
+    github:
+      description: 社交帐号
+    qq:
+      description: |
+        862671480 技术群
+        1034267197 闲聊群
+    member:
+      description: 成员列表
+    bilibili:
+      description: 无公共帐号，有 tag
+    youtube:
+      description: 有公共帐号
+    telegram:
+      description: 闲聊为主
+    discord:
+      description: 闲聊为主
+docs:
+  previous: 历史版本
+  chinese-tutorial-document: 
+    title: 中文教程文档
+    description: 从入门到进阶，教程文档一站式
+  persuade-to-quit-manim:
+    title: 从没入门到被劝退
+    description: 包含学习 manim 需要面对的种种困难，用于劝退
+  manim-cairo-faq:
+    title: manim cairo backend 常见问题
+    description: 包含旧版 manim 使用过程中易出现问题的解答
+  manimgl-faq:
+    title: manimgl 常见问题
+    description: 包含新版 manimgl 使用过程中易出现问题的解答
+  manim-with-vscode:
+    title: Manim with VSCode 配置指南
+    description: 在 VSCode 中配置运行 / 调试 manim 的教程
+  manim-usage-changes:
+    title: 新版 manim 用法变化
+    description: 包含新版 manimgl 相比于旧版在使用层面上的变化
+  structure-cairo:
+    title: manim cairo 结构
+    description: 包含 manim cairo backend 中类的继承结构
+  structure-gl:
+    title: manimgl 结构
+    description: 包含 manimgl 中类的继承结构
+tools:
+  color-tools:
+    title: 颜色工具
+    description: 颜色 RGB 与 hex 转换、颜色选取工具
+  check-xelatex-packages:
+    title: check_xelatex_packages.py
+    description: 检查 manim 需要的 xelatex 依赖是否安装完成
+  check-manim-dependencies:
+    title: check_manim_dependencies.py
+    description: 检查 manim 所需全部依赖是否安装完成
+manim-builtin-colors: manim 内置颜色
+Go: 进入
+Download: 下载
+New: 新版
+Old: 旧版
+membership:
+  core-members: 核心成员
+  bilibili-video-creators: 哔哩哔哩 UP 主
+  special-thanks: 特别鸣谢
+toc: 目录
