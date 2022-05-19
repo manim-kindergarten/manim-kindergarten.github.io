@@ -112,7 +112,10 @@ ImportError: ('Unable to load OpenGL library',
 
 1. 找到 Python 下 `PyOpenGL` 的文件 `OpenGL/platform/ctypesloader.py`，并且在做出任何改动之前做好完整的备份
 2. 找到其中的 `fullName = util.find_library(name)`
-3. 把它更改为 `fullName = '/System/Library/Frameworks/OpenGL.framework/OpenGL'`
+3. 把它更改为 
+   ```python
+   fullName = '/System/Library/Frameworks/OpenGL.framework/OpenGL'
+   ```
 
 #### Q2: 无法导入 `manim_sandbox`
 
@@ -196,7 +199,7 @@ tex:
 
 <div id="bc139b"></div>
 
-> [6] 全部选项见文档: <https://docs.manim.org.cn/getting_started/configuration.html#id4>
+> [6] 全部选项见文档: [参数配置](https://docs.manim.org.cn/getting_started/configuration.html#id4)
 
 #### Q2: 怎么调整导出画质
 

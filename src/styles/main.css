@@ -26,3 +26,9 @@ html.dark {
   width: 100%;
   height: 2px;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: small;
+  }
+}

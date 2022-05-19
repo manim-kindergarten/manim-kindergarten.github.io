@@ -23,33 +23,33 @@ const avg = computed(() => {
 
 <template>
   <PureCard :title="'RGB to HEX'" ma>
-    <div p-4>
-      <label border="~ rounded gray-200 dark:gray-700" leading-normal mx-2>
-        <span px-2 border="r gray-200 dark:gray-700">R</span>
+    <div p-4 flex flex-wrap>
+      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex-nowrap>
+        <span px-2 py-1 border="r gray-200 dark:gray-700">R</span>
         <input
-          v-model="rRef" type="number"
+          v-model="rRef" type="number" py-1
           focus:outline-none pl-2 w-4rem max="255" min="0" leading-none rounded
         >
-      </label>
-      <label border="~ rounded gray-200 dark:gray-700" leading-normal mx-2>
-        <span px-2 border="r gray-200 dark:gray-700">G</span>
+      </div>
+      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex-nowrap>
+        <span px-2 py-1 border="r gray-200 dark:gray-700">G</span>
         <input
-          v-model="gRef" type="number"
+          v-model="gRef" type="number" py-1
           focus:outline-none pl-2 w-4rem max="255" min="0" leading-none rounded
         >
-      </label>
-      <label border="~ rounded gray-200 dark:gray-700" leading-normal mx-2>
-        <span px-2 border="r gray-200 dark:gray-700">B</span>
+      </div>
+      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex-nowrap>
+        <span px-2 py-1 border="r gray-200 dark:gray-700">B</span>
         <input
-          v-model="bRef" type="number"
+          v-model="bRef" type="number" py-1
           focus:outline-none pl-2 w-4rem max="255" min="0" leading-none rounded
         >
-      </label>
+      </div>
       <ClickCopy
         :content="hex"
         :style="{backgroundColor: hex, color: avg > 128 ? 'black': 'white'}"
         rounded shadow
-        px-4 mx-2 py-1
+        px-4 mx-2 py-1 my-1
       />
     </div>
   </PureCard>

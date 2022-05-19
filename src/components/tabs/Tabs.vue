@@ -42,7 +42,13 @@ const renderOneTabIcon = (value: string, label: string, index: number) => {
 const renderTabBar = () => {
   return h(
     'div',
-    { class: 'px-4 pt-2' },
+    {
+      class: 'px-4 pt-2 flex flex-nowrap',
+      style: {
+        overflowX: 'scroll',
+        overflowY: 'hidden',
+      },
+    },
     slots.default && slots.default().map((it, index) => {
       return renderOneTabIcon(it.props?.name, it.props?.tab, index)
     }),
@@ -66,3 +72,18 @@ const renderTabContent = () => {
     <render-tab-content />
   </div>
 </template>
+
+<style scoped>
+div::-webkit-scrollbar {
+  height: 2px;
+}
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+div::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+.dark div::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+</style>

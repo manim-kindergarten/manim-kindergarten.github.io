@@ -16,14 +16,16 @@ const cancelCopy = () => {
 </script>
 
 <template>
-  <label
+  <div
     leading-none
     @mouseleave="cancelCopy"
   >
-    {{ content }}
-    <span v-if="!copyed" icon-btn text-sm class="i-carbon-copy animate-fadein-shift-x-1-300" @click="clickCopy" />
-    <span v-else icon-btn text-sm class="i-carbon-checkmark animate-fadein-shift-x-1-300" />
-  </label>
+    <span mr-1>
+      {{ content }}
+    </span>
+    <span v-if="!copyed" leading-none icon-btn text-sm class="i-carbon-copy animate-fadein-shift-x-1-300" @click="clickCopy" />
+    <span v-else leading-none icon-btn text-sm class="i-carbon-checkmark animate-fadein-shift-x-1-300" />
+  </div>
 </template>
 
 <style scoped>

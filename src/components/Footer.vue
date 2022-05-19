@@ -3,6 +3,6 @@
 
 <template>
   <footer mt-xl>
-    Copyright © 2022 Manim Kindergarten
+    Copyright © {{ new Date().getFullYear() }} Manim Kindergarten
   </footer>
 </template>

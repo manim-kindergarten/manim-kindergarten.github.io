@@ -15,27 +15,27 @@ const rgb = computed(() => {
 
 <template>
   <PureCard :title="'Color Picker'" ma>
-    <div p-4>
-      <label border="~ rounded gray-200 dark:gray-700" leading-normal mx-2>
-        <span px-2 border="r gray-200 dark:gray-700">Color</span>
+    <div p-4 flex flex-wrap>
+      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex flex-nowrap>
+        <span px-2 py-1 leading-none border="r gray-200 dark:gray-700">Color</span>
         <input
           v-model="colorRef" type="color"
-          focus:outline-none leading-none
-          h-20px
-          px-1
+          focus:outline-none
+          leading-none
+          w-4rem
         >
-      </label>
+      </div>
       <ClickCopy
         :content="colorRef"
         :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
         rounded shadow
-        px-4 mx-2 py-1
+        px-4 mx-2 py-1 my-1
       />
       <ClickCopy
         :content="`[${rgb.join(', ')}]`"
         :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
         rounded shadow
-        px-4 mx-2 py-1
+        px-4 mx-2 py-1 my-1
       />
     </div>
   </PureCard>
