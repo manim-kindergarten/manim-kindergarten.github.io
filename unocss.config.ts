@@ -44,7 +44,7 @@ export default defineConfig({
           transform: translate${matches[1].toUpperCase()}(${matches[2]}rem);
           opacity: 0;
         } 
-        99%, 100% { 
+        90%, 100% { 
           -webkit-transform: translate${matches[1].toUpperCase()}(0rem);
           transform: translate${matches[1].toUpperCase()}(0rem);
           opacity: 1;
