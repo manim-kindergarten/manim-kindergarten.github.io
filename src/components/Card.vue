@@ -14,7 +14,7 @@ defineProps<{
 </script>
 
 <template>
-  <pure-card :title="title" ma :animated="animated">
+  <pure-card :title="title" :animated="animated" ma>
     <template #header-extra>
       <div flex>
         <a v-for="(a, i) of action" :key="i" flex btn text-sm ml-2 :href="a.url" :title="t(a.label)">

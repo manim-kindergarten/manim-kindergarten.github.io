@@ -1,10 +1,18 @@
 <script setup lang="ts">
-
+const { t } = useI18n()
 </script>
 
 <template>
-  <rgb2hex :animated="0" />
-  <hex2rgb :animated="1" />
-  <color-picker :animated="2" />
-  <builtin-colors :animated="3" />
+  <pure-card title="RGB to HEX" ma :animated="0">
+    <rgb2hex />
+  </pure-card>
+  <pure-card title="HEX to RGB" ma :animated="1">
+    <hex2rgb />
+  </pure-card>
+  <pure-card title="Color picker" ma :animated="2">
+    <color-picker />
+  </pure-card>
+  <pure-card :title="t('manim-builtin-colors')" ma :animated="3">
+    <builtin-colors />
+  </pure-card>
 </template>

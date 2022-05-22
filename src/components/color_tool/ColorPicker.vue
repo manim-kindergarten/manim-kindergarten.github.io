@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const colorRef = $ref('#000000')
 const rgb = computed(() => {
   const color = [0, 0, 0]
@@ -14,29 +15,27 @@ const rgb = computed(() => {
 </script>
 
 <template>
-  <PureCard :title="'Color Picker'" ma>
-    <div p-4 flex flex-wrap>
-      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex flex-nowrap>
-        <span px-2 py-1 leading-none border="r gray-200 dark:gray-700">Color</span>
-        <input
-          v-model="colorRef" type="color"
-          focus:outline-none
-          leading-none
-          w-4rem
-        >
-      </div>
-      <ClickCopy
-        :content="colorRef"
-        :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
-        rounded shadow
-        px-4 mx-2 py-1 my-1
-      />
-      <ClickCopy
-        :content="`[${rgb.join(', ')}]`"
-        :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
-        rounded shadow
-        px-4 mx-2 py-1 my-1
-      />
+  <div p-4 flex flex-wrap>
+    <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex flex-nowrap>
+      <span px-2 py-1 leading-none border="r gray-200 dark:gray-700">Color</span>
+      <input
+        v-model="colorRef" type="color"
+        focus:outline-none
+        leading-none
+        w-4rem
+      >
     </div>
-  </PureCard>
+    <ClickCopy
+      :content="colorRef"
+      :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
+      rounded shadow
+      px-4 mx-2 py-1 my-1
+    />
+    <ClickCopy
+      :content="`[${rgb.join(', ')}]`"
+      :style="{backgroundColor: colorRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
+      rounded shadow
+      px-4 mx-2 py-1 my-1
+    />
+  </div>
 </template>

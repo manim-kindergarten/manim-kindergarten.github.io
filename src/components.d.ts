@@ -7,6 +7,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Accordion: typeof import('./components/accordion/Accordion.vue')['default']
     AccordionRow: typeof import('./components/accordion/AccordionRow.vue')['default']
+    AnimateComponent: typeof import('./components/AnimateComponent.vue')['default']
     Avatar: typeof import('./components/Avatar.vue')['default']
     Back: typeof import('./components/Back.vue')['default']
     BuiltinColors: typeof import('./components/color_tool/BuiltinColors.vue')['default']

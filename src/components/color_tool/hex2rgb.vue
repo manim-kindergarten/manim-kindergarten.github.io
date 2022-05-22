@@ -24,18 +24,15 @@ const rgb = computed(() => {
 </script>
 
 <template>
-  <PureCard :title="'HEX to RGB'" ma>
-    <div p-4 flex flex-wrap>
-      <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex-nowrap>
-        <span px-2 py-1 border="r gray-200 dark:gray-700">HEX</span>
-        <input v-model="hexRef" py-1 focus:outline-none pl-2 leading-none rounded maxlength="7">
-      </div>
-      <ClickCopy
-        :content="`[${rgb.join(', ')}]`"
-        :style="{backgroundColor: hexRef, color: rgb.reduce((x, y)=>x+y, 0) > 376 ? 'black': 'white'}"
-        rounded shadow
-        px-4 mx-2 py-1 my-1
-      />
+  <div p-4 flex flex-wrap>
+    <div border="~ rounded gray-200 dark:gray-700" leading-normal mx-2 my-1 flex-nowrap>
+      <span px-2 py-1 border="r gray-200 dark:gray-700">HEX</span>
+      <input v-model="hexRef" py-1 focus:outline-none pl-2 leading-none rounded maxlength="7">
     </div>
-  </PureCard>
+    <click-copy
+      :content="`[${rgb.join(', ')}]`"
+      :style="{ backgroundColor: hexRef, color: rgb.reduce((x, y) => x + y, 0) > 376 ? 'black' : 'white' }" rounded shadow px-4
+      mx-2 py-1 my-1
+    />
+  </div>
 </template>

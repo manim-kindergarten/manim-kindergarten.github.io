@@ -4,7 +4,7 @@
 
 
 .prose {
-  animation: fadein-shift-x-4-1000 cubic-bezier(0, 0, 0.2, 1) 0.8s;
+  animation: fadein-shift-x-4-800 cubic-bezier(0, 0, 0.2, 1) 0.8s;
   --prism-font-family: 'DM Mono', monospace;
 }
 

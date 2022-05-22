@@ -10,8 +10,6 @@ let checkedRow = $ref(globalProps.defaultRow)
 
 const slots = useSlots()
 
-let animateStart = $ref(false)
-
 const renderButton = (name: string, title: string) => h(
   'label',
   {
@@ -41,15 +39,9 @@ const renderBody = () => h(
   {
     ref: 'accordionBody',
     class: {
-      'animate-fadein-shift-x-4-1000': globalProps.animated !== undefined,
       'border border-gray-200 dark:border-gray-700': true,
       'shadow': true,
     },
-    style: {
-      'animation-delay': globalProps.animated !== undefined ? `${globalProps.animated}ms` : '',
-      'opacity': animateStart || globalProps.animated === undefined ? '1' : '0',
-    },
-    onanimationstart: () => { animateStart = true },
   },
   slots.default && slots.default().map(it => h('div', {
     class: {
@@ -71,7 +63,7 @@ const renderBody = () => h(
 </script>
 
 <template>
-  <div>
+  <AnimateComponent :animated="animated">
     <renderBody />
-  </div>
+  </AnimateComponent>
 </template>
