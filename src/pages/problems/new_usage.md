@@ -1,4 +1,4 @@
-<Back />
+<Back url='/docs' />
 
 # 新版 manim 用法变化 v 1.0.1
 
@@ -75,4 +75,4 @@
     -   `Axes` 原 `.get_coordinate_labels(x_values, y_values)` 方法重命名为 `.add_coordinate_labels(x_values, y_values)` （但并没有添加到画面上，估计是忘写了）
     -   `ComplexPlane` 的 `.add_coordinate_labels(numbers)` 会直接将坐标添加到画面上（估计这个是没忘）
 
-<Back />
+<Back url='/docs' />

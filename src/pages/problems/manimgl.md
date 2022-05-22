@@ -1,4 +1,4 @@
-<Back />
+<Back url='/docs' />
 
 # manimgl 常见问题
 
@@ -350,4 +350,4 @@ text = Text(
 - 添加了线条不显示问题的解决方法
 - 新增了获取版本的方法
 
-<Back />
+<Back url='/docs' />
