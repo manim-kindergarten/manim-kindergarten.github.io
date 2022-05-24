@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { CardData } from '~/data/CardData'
+import { downloadPath } from '~/data/downloadPath'
 
 const { t } = useI18n()
-
-const downloadPath = 'https://fastly.jsdelivr.net/gh/widcardw/manim-kindergarten.github.io@master/public'
 
 const data: CardData[] = [
   {
