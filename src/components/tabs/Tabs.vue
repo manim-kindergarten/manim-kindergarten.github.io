@@ -1,8 +1,6 @@
 <script setup lang="ts">
 // @unocss-include
 
-import { createTextVNode } from 'vue'
-
 const globalProps = defineProps<{
   // 这一个容器的名称
   name: string
@@ -13,29 +11,31 @@ const globalProps = defineProps<{
 const slots = useSlots()
 
 let currentTabName = $ref(globalProps.defaultTab)
+let currentTabPos = $ref({ left: 0, width: 0 })
+const themeColor = 'rgba(13, 148, 136, var(--un-text-opacity))'
 
 const renderOneTabIcon = (value: string, label: string, index: number) => {
+  const showInitBorder = index === 0 && !currentTabName
   return h(
     'label',
     {
       class: {
-        'px-2 pt-1 mr-2 icon-btn': true,
-        'border-b-2': (currentTabName === value) || (index === 0 && !currentTabName),
+        'px-2 pt-1 mr-2 icon-btn border-b-2': true,
+      },
+      style: {
+        color: showInitBorder || value === currentTabName ? themeColor : '',
+        borderBottomColor: showInitBorder ? themeColor : 'transparent',
+      },
+      onclick() {
+        currentTabName = value
+        currentTabPos = {
+          left: this.offsetLeft,
+          width: this.offsetWidth,
+        }
+        // console.log(currentTabPos.left, currentTabPos.width)
       },
     },
-    [h('input',
-      {
-        type: 'radio',
-        name: globalProps.name,
-        value,
-        onclick: () => { currentTabName = value },
-        style: {
-          display: 'none',
-        },
-      },
-      {}),
-    createTextVNode(label),
-    ],
+    label,
   )
 }
 
@@ -43,15 +43,24 @@ const renderTabBar = () => {
   return h(
     'div',
     {
-      class: 'px-4 pt-2 flex flex-nowrap',
-      style: {
-        overflowX: 'scroll',
-        overflowY: 'hidden',
-      },
+      class: 'relative px-4 pt-2 flex flex-nowrap overflow-x-scroll overflow-y-hidden',
     },
-    slots.default && slots.default().map((it, index) => {
-      return renderOneTabIcon(it.props?.name, it.props?.tab, index)
-    }),
+    [
+      h('div', {
+        class: {
+          'absolute bottom-0 h-0 border-b-2': true,
+        },
+        style: {
+          left: `${currentTabPos.left}px`,
+          width: `${currentTabPos.width}px`,
+          transition: 'width .2s, left .2s',
+          borderBottomColor: themeColor,
+        },
+      }),
+      ...(slots.default?.().map((it, index) => {
+        return renderOneTabIcon(it.props?.name, it.props?.tab, index)
+      }) ?? []),
+    ],
   )
 }
 
