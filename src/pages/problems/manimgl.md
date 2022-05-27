@@ -172,7 +172,7 @@ tex:
 
 ### 2.3 dvisvgm 问题
 
-#### Q1: 报错 `OSError: C:\Users\...\Temp\Tex\<...>.svg not Found`
+#### 📌 Q1: 报错 `OSError: C:\Users\...\Temp\Tex\<...>.svg not Found`
 
 如果你运行 `manim` 的位置不在 C 盘，那么请按照以下处理；如果你运行的位置在 C 盘，请看旧版常见问题文档中“dvisvgm 问题”部分。
 
@@ -271,7 +271,7 @@ falling back to "Sans Not-Rotated 48", expect ugly output.
 ...     print(f)
 ```
 
-同时，字重(font weight)、斜体(slant)等属性可以在 `Text` 的 `weight`和 `slant` 参数中设置。例如：
+同时，字重 (font weight)、斜体 (slant) 等属性可以在 `Text` 的 `weight`和 `slant` 参数中设置。例如：
 
 ```python
 text = Text(
