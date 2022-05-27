@@ -10,7 +10,7 @@ const { t } = useI18n()
 <template>
   <Accordion
     :name="'membership'"
-    :animated="0"
+    :delay="0"
     default-row="core"
     max-w-5xl ma
   >

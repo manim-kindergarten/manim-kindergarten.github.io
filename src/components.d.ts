@@ -28,6 +28,8 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     TabPane: typeof import('./components/tabs/TabPane.vue')['default']
     Tabs: typeof import('./components/tabs/Tabs.vue')['default']
+    ToolTip: typeof import('./components/tooltips/ToolTip.vue')['default']
+    ToolTipsProvider: typeof import('./components/tooltips/ToolTipsProvider.vue')['default']
   }
 }
 

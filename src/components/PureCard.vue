@@ -2,7 +2,7 @@
 
 defineProps<{
   title: string
-  animated?: number
+  delay?: number
 }>()
 
 </script>
@@ -15,7 +15,7 @@ defineProps<{
     shadow
     hover:shadow-xl
     duration-300
-    :animated="animated"
+    :delay="delay"
   >
     <div
       flex justify-between

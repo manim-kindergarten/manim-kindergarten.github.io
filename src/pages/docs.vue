@@ -77,6 +77,6 @@ const data: CardData[] = [
     :description="t(it.description)"
     :action="it.action"
     :previous="it.previous"
-    :animated="i"
+    :delay="i"
   />
 </template>

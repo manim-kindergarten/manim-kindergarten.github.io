@@ -29,6 +29,6 @@ const tools: CardData[] = [
     :title="t(it.title)"
     :description="t(it.description)"
     :action="it.action"
-    :animated="i"
+    :delay="i"
   />
 </template>

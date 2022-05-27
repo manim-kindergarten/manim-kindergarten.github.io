@@ -1,8 +1,12 @@
 <script setup lang="ts">
 // @unocss-include
-defineProps<{
-  animated?: number
-}>()
+withDefaults(defineProps<{
+  delay?: number
+  animation?: string
+}>(), {
+  delay: 0,
+  animation: 'animate-fadein-shift-x-4-800',
+})
 
 const animateStart = $ref(false)
 
@@ -12,8 +16,8 @@ const animateStart = $ref(false)
 
 <template>
   <div
-    class="animate-fadein-shift-x-4-800"
-    :style="{ animationDelay:animated !== undefined ? `${animated * 50}ms` : '', opacity: (animated === undefined) ? '1' : (animateStart ? '1' : '0') }"
+    :class="animation"
+    :style="{ animationDelay:delay !== undefined ? `${delay * 50}ms` : '', opacity: (delay === undefined) ? '1' : (animateStart ? '1' : '0') }"
     @animationstart.prevent.self="animateStart = true"
   >
     <slot />
