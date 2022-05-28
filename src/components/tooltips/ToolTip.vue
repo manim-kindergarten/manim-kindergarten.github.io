@@ -8,6 +8,7 @@ const props = defineProps<{
   <div
     @mouseenter="e => ($parent as any)?.onEnter(e, props.description)"
     @mouseleave="($parent as any)?.onLeave()"
+    @click="($parent as any)?.refreshTipContent(props.description)"
   >
     <slot />
   </div>

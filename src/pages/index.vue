@@ -16,16 +16,17 @@ const { t } = useI18n()
   </div>
   <div
     text-xl sm:text-2xl lg:text-3xl
-    flex justify-center space-x-3xl
+    flex justify-center
     animate-fade-in animate-count-1
   >
-    <IconTip
-      v-for="(it, i) in links" :key="i"
-      :name="it.name"
-      :description="t(it.description)"
-      :icon="it.icon"
-      :url="it.url"
-    />
+    <ToolTipsProvider :gap="6">
+      <ToolTip
+        v-for="(it, i) in links" :key="i"
+        :description="t(it.description)"
+      >
+        <a :href="it.url" icon-btn :class="it.icon" />
+      </ToolTip>
+    </ToolTipsProvider>
   </div>
 </template>
 
