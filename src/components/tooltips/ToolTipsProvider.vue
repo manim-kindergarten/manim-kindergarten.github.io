@@ -25,68 +25,45 @@
  *   </ToolTip>
  * </ToolTipProvider>
  */
-const slots = useSlots()
 
 let tipOpacity = $ref(0)
 let tipContent = $ref('')
 const tipPosition = reactive({ x: 0, y: 0 })
 
-const renderContents = () => {
-  return slots.default && slots.default().map((it) => {
-    // eslint-disable-next-line no-console
-    console.log(it)
-    return h(
-      'div',
-      {
-        onmouseenter: () => {
-          tipOpacity = 1
-          tipContent = it.props?.description
-          tipPosition.x = it.props?.style.offsetLeft
-        },
-        onmouseleave: () => { tipOpacity = 0 },
-      },
-      it,
-    )
-  })
+const onLeave = () => {
+  tipOpacity = 0
 }
 
-const renderBody = () => {
-  return h(
-    'div',
-    {
-
-    },
-    [
-      ...renderContents(),
-      h(
-        'div',
-        {
-          style: {
-            opacity: tipOpacity,
-            left: `${tipPosition.x}px`,
-            top: `${tipPosition.y}px`,
-            zIndex: 999,
-            backgroundColor: 'darkgray',
-          },
-        },
-        tipContent,
-      ),
-    ],
-  )
+const onEnter = (e: MouseEvent, description: string) => {
+  tipOpacity = 1
+  tipContent = description
+  tipPosition.x = (e.target as HTMLElement)?.offsetLeft
 }
+
+defineExpose({
+  onEnter, onLeave,
+})
 
 </script>
 
 <template>
-  <render-body />
-  <!-- <render-contents />
-  <div
-    absolute
-    bg="gray-700"
-    text="white"
-    z-999
-    :style="{ opacity: tipOpacity, left: tipPosition.x, top: tipPosition.y }"
-  >
-    {{ tipContent }}
-  </div> -->
+  <div flex justify-center gap="2">
+    <slot />
+  </div>
+  <div relative>
+    <div
+      absolute
+      bg="gray-700"
+      text="white"
+      z-999
+      :style="{
+        opacity: tipOpacity,
+        left: `${tipPosition.x}px`,
+        top: `${tipPosition.y}px`,
+        transform: 'translateX(-50%)',
+      }"
+    >
+      {{ tipContent }}
+    </div>
+  </div>
 </template>

@@ -1,9 +1,14 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   description: string
 }>()
 </script>
 
 <template>
-  <slot />
+  <div
+    @mouseenter="e => ($parent as any)?.onEnter(e, props.description)"
+    @mouseleave="($parent as any)?.onLeave()"
+  >
+    <slot />
+  </div>
 </template>
