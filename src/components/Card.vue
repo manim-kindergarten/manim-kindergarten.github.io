@@ -8,13 +8,13 @@ defineProps<{
   description?: string
   action?: Array<Action>
   previous?: Array<{ label: string; link: string }>
-  animated?: number
+  delay?: number
 }>()
 
 </script>
 
 <template>
-  <pure-card :title="title" :animated="animated" ma>
+  <pure-card :title="title" :delay="delay" ma>
     <template #header-extra>
       <div flex>
         <a v-for="(a, i) of action" :key="i" flex btn text-sm ml-2 :href="a.url" :title="t(a.label)">

@@ -3,7 +3,7 @@
 const globalProps = defineProps<{
   name: string
   defaultRow?: string
-  animated?: number
+  delay?: number
 }>()
 
 let checkedRow = $ref(globalProps.defaultRow)
@@ -63,7 +63,7 @@ const renderBody = () => h(
 </script>
 
 <template>
-  <AnimateComponent :animated="animated">
+  <AnimateComponent :delay="delay">
     <renderBody />
   </AnimateComponent>
 </template>
