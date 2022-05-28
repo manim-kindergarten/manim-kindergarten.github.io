@@ -45,17 +45,23 @@ defineExpose({
     text="white sm"
     z-999
     :style="{
-      display: tipOpacity ? 'block' : 'none',
+      opacity: tipOpacity,
+      visibility: tipOpacity ? 'visible' : 'hidden',
       left: `${tipPosition.x}px`,
       top: `${tipPosition.y}px`,
-      transform: 'translateX(-50%)',
     }"
   >
-    {{ tipContent }}
+    <p v-for="row in tipContent.split('\n')" :key="row">
+      {{ row }}
+    </p>
   </div>
 </template>
 
 <style scoped>
+.tooltip {
+  transition: opacity .3s, visibility .3s;
+  transform: translateX(-50%);
+}
 .tooltip::after {
   content: "";
   position: absolute;
