@@ -12,60 +12,9 @@ const slots = useSlots()
 
 let currentTabName = $ref(globalProps.defaultTab)
 let currentTabPos = $ref({ left: 0, width: 0 })
-const themeColor = 'rgba(13, 148, 136, var(--un-text-opacity))'
-
-const renderOneTabIcon = (value: string, label: string, index: number) => {
-  const showInitBorder = index === 0 && !currentTabName
-  return h(
-    'label',
-    {
-      class: {
-        'px-2 pt-1 mr-2 icon-btn border-b-2': true,
-      },
-      style: {
-        color: showInitBorder || value === currentTabName ? themeColor : '',
-        borderBottomColor: showInitBorder ? themeColor : 'transparent',
-      },
-      onclick() {
-        currentTabName = value
-        currentTabPos = {
-          left: this.offsetLeft,
-          width: this.offsetWidth,
-        }
-        // console.log(currentTabPos.left, currentTabPos.width)
-      },
-    },
-    label,
-  )
-}
-
-const renderTabBar = () => {
-  return h(
-    'div',
-    {
-      class: 'relative px-4 pt-2 flex flex-nowrap overflow-x-scroll overflow-y-hidden',
-    },
-    [
-      h('div', {
-        class: {
-          'absolute bottom-0 h-0 border-b-2': true,
-        },
-        style: {
-          left: `${currentTabPos.left}px`,
-          width: `${currentTabPos.width}px`,
-          transition: 'width .2s, left .2s',
-          borderBottomColor: themeColor,
-        },
-      }),
-      ...(slots.default?.().map((it, index) => {
-        return renderOneTabIcon(it.props?.name, it.props?.tab, index)
-      }) ?? []),
-    ],
-  )
-}
 
 const renderTabContent = () => {
-  return slots.default && slots.default().find((it) => {
+  return slots.default?.().find((it) => {
     if (!currentTabName)
       return true
 
@@ -73,26 +22,63 @@ const renderTabContent = () => {
   })
 }
 
+const isCurrent = (name: string, index: number) => {
+  const isInit = index === 0 && currentTabName === undefined
+  return isInit || currentTabName === name
+}
+
+const onLabelClick = (e: MouseEvent, name: string) => {
+  currentTabName = name
+  currentTabPos = {
+    left: (e.target as HTMLElement)?.offsetLeft,
+    width: (e.target as HTMLElement)?.offsetWidth,
+  }
+  // console.log(currentTabPos.left, currentTabPos.width)
+}
+
 </script>
 
 <template>
   <div>
-    <render-tab-bar />
+    <div
+      class="tab-bar"
+      relative px-4 pt-2 flex flex-nowrap overflow-x-scroll overflow-y-hidden
+    >
+      <label
+        v-for="(tabIcon,index) in slots?.default?.()"
+        :key="tabIcon.props?.name"
+        class="tab-label"
+        :class="isCurrent(tabIcon.props?.name, index) ? 'text-teal-600': 'b-transparent'"
+        px-2 pt-1 mr-2 icon-btn b-b-2
+        @click="e => onLabelClick(e, tabIcon.props?.name)"
+      >{{ tabIcon.props?.tab }}</label>
+      <div
+        class="tab-indicator"
+        absolute bottom-0 h-0 b-b-2 b-teal-600
+        :style="{
+          left: `${currentTabPos.left}px`,
+          width: `${currentTabPos.width}px`,
+        }"
+      />
+    </div>
     <render-tab-content />
   </div>
 </template>
 
 <style scoped>
-div::-webkit-scrollbar {
+.tab-bar::-webkit-scrollbar {
   height: 2px;
 }
-div::-webkit-scrollbar-track {
+.tab-bar::-webkit-scrollbar-track {
   background: transparent;
 }
-div::-webkit-scrollbar-thumb {
+.tab-bar::-webkit-scrollbar-thumb {
   background: #eee;
 }
-.dark div::-webkit-scrollbar-thumb {
+.dark .tab-bar::-webkit-scrollbar-thumb {
   background-color: #333;
+}
+.tab-indicator {
+  transition: width .2s, left .2s;
 }
 </style>
