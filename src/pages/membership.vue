@@ -15,7 +15,7 @@ const { t } = useI18n()
     max-w-5xl ma
   >
     <AccordionRow name="core" :title="t('membership.core-members')">
-      <ToolTipsProvider>
+      <ToolTipsProvider :gap="1">
         <ToolTip
           v-for="(it, i) in coreMembers.data" :key="i"
           :description="it.name"
@@ -28,7 +28,7 @@ const { t } = useI18n()
       <p color-zinc-300 dark:color-zinc-600 pb-2>
         按照昵称拼音排序，如有遗漏请联系鹤翔万里
       </p>
-      <ToolTipsProvider>
+      <ToolTipsProvider :gap="1">
         <ToolTip
           v-for="(it, i) in upMembers.data" :key="i"
           :description="it.name"
@@ -38,7 +38,7 @@ const { t } = useI18n()
       </ToolTipsProvider>
     </AccordionRow>
     <AccordionRow name="thanks" :title="t('membership.special-thanks')">
-      <ToolTipsProvider>
+      <ToolTipsProvider :gap="1">
         <ToolTip
           v-for="(it, i) in specialThanks.data" :key="i"
           :description="it.name"

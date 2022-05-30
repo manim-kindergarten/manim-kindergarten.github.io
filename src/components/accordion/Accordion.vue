@@ -52,8 +52,8 @@ const renderBody = () => h(
     renderButton(it.props?.name, it.props?.title),
     h('div', {
       class: {
-        'transition-all': true,
-        'h-0': it.props?.name !== checkedRow,
+        'transition-all duration-500': true,
+        'h-0 scale-y-0': it.props?.name !== checkedRow,
         'p-4': it.props?.name === checkedRow,
       },
     }, it),
