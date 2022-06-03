@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="link" :title="name">
+  <a :href="link" :title="name" target="_blank">
     <img
       :src="avatar"
       :alt="name"
