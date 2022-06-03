@@ -17,10 +17,9 @@ const renderButton = (name: string, title: string) => h(
       'block p-4': true,
       'bg-zinc-100 dark:bg-zinc-800 hover:color-teal-600': true,
       'text-left cursor-pointer shadow': true,
-      'border border-gray-200 dark:border-gray-700': true,
       'underline': name === checkedRow,
     },
-    border: '~ gray-200 dark:gray-700',
+    border: '~ zinc-200 dark:zinc-700',
   },
   [
     h('input', {
@@ -39,9 +38,9 @@ const renderBody = () => h(
   {
     ref: 'accordionBody',
     class: {
-      'border border-gray-200 dark:border-gray-700': true,
-      'shadow': true,
+      shadow: true,
     },
+    border: '~ rounded zinc-200 dark:zinc-700',
   },
   slots.default && slots.default().map(it => h('div', {
     class: {
