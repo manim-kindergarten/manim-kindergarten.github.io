@@ -33,6 +33,7 @@ html:not(.dark) .prose {
   --prism-regex: #ab5e3f;
   --prism-json-property: #698c96;
   --prism-selector: #6c7834;
+  --un-prose-borders: #dddddd;
 }
 
 html.dark .prose {
@@ -60,6 +61,7 @@ html.dark .prose {
   --prism-line-highlight-background: #444444;
   --prism-selection-background: #444444;
   --prism-selector: #a1b567;
+  --un-prose-borders: #333333;
 }
 
 .prose a:hover {

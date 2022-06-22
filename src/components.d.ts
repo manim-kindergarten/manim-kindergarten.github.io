@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     Logo: typeof import('./components/Logo.vue')['default']
     ManimColors: typeof import('./components/color_tool/ManimColors.vue')['default']
     ManimglColors: typeof import('./components/color_tool/ManimglColors.vue')['default']
+    MyCanvas: typeof import('./components/canvas/MyCanvas.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     PureCard: typeof import('./components/PureCard.vue')['default']
     Rgb2hex: typeof import('./components/color_tool/rgb2hex.vue')['default']
