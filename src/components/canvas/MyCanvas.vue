@@ -15,13 +15,14 @@ const initCanvas = () => {
   })
 }
 
-nextTick(initCanvas)
-
-// 当颜色模式切换时重绘 Logo
-watchEffect(() => {
-  // eslint-disable-next-line no-unused-expressions
-  isDark.value
-  nextTick(() => { initCanvas() })
+onMounted(() => {
+  nextTick(initCanvas)
+  // 当颜色模式切换时重绘 Logo
+  watchEffect(() => {
+    // eslint-disable-next-line no-unused-expressions
+    isDark.value
+    nextTick(() => { initCanvas() })
+  })
 })
 
 </script>
