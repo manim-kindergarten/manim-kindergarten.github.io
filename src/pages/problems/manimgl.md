@@ -13,9 +13,9 @@
 
 ## 一切之前
 
-`manim` 是一个使用 `python` 制作视频的动画引擎。学习它你首先要会一点 `python`，至少要学会 `python` 的基础语法、模块的调用以及类的基础知识（如果想要阅读源码，还需要掌握更多 `python` 面向对象的知识）。没有 `python` 的知识学 manim 是毫无意义的，会非常吃力，也会遇到非常多的问题。学会了 `python` 之后便可以少走非常多的弯路，这也是我们的忠告。因此，加入我们 Manim-Kindergarten[<sup>1</sup>](#3eba26) 首先要会使用 `python`，我们会在入群问题[<sup>2</sup>](#3eba26)中进行一个最基础的检测。
+`manim` 是一个使用 `python` 制作视频的动画引擎。学习它你首先要会一点 `python`，至少要学会 `python` 的基础语法、模块的调用以及类的基础知识（如果想要阅读源码，还需要掌握更多 `python` 面向对象的知识）。没有 `python` 的知识学 manim 是毫无意义的，会非常吃力，也会遇到非常多的问题。学会了 `python` 之后便可以少走非常多的弯路，这也是我们的忠告。因此，加入我们 Manim-Kindergarten[<sup id="quote-01">1</sup>](#ref-01) 首先要会使用 `python`，我们会在入群问题[<sup id="quote-02">2</sup>](#ref-02)中进行一个最基础的检测。
 
-**最后，本常见问题文档基于 manim 的 master 分支版本[<sup>3</sup>](#3eba26)，此文档中未出现的问题可能在旧版也会有同样问题，所以推荐两个常见问题文档一起查阅。**
+**最后，本常见问题文档基于 manim 的 master 分支版本[<sup id="quote-03">3</sup>](#ref-03)，此文档中未出现的问题可能在旧版也会有同样问题，所以推荐两个常见问题文档一起查阅。**
 
 ### 如何提问
 
@@ -55,12 +55,6 @@
    2. Python & OpenGL for Scientific Visualization: <https://www.labri.fr/perso/nrougier/python-opengl/>
    3. Geometry Shader: <https://learnopengl.com/Advanced-OpenGL/Geometry-Shader/>
 
-<div id="3eba26"></div>
-
-> [1] Manim-Kindergarten QQ 群 862671480\
-> [2] 入群问题：<https://b23.tv/KmAvsG>\
-> [3] 即新版本 `manim`，原 `shaders` 分支版本
-
 ## 1. 安装问题
 
 _注: 这里未提到的部分安装时会出现的问题请见旧版常见问题文档“manim常见问题 v3.1”_
@@ -89,11 +83,8 @@ CMake must be installed to build the following extensions
 
 #### Q4: `pip install -e .` 时抛出 `Exception:Versioning for ...` 异常
 
-该问题已在 [#1565](https://github.com/3b1b/manim/pull/1565) 修复。目前可以通过 `git clone https://github.com/3b1b/manim.git`[<sup>4</sup>](#33fe0f) 克隆下源码，也可通过下载 zip 后用 `pip install -e .` 命令安装。
+该问题已在 [#1565](https://github.com/3b1b/manim/pull/1565) 修复。目前可以通过 `git clone https://github.com/3b1b/manim.git`[<sup id="quote-04">4</sup>](#ref-04) 克隆下源码，也可通过下载 zip 后用 `pip install -e .` 命令安装。
 
-<div id="33fe0f"></div>
-
->[4] 国内可以使用 `git clone https://github.com.cnpmjs.org/3b1b/manim.git`，速度更快
 
 ## 2. 运行时问题
 
@@ -110,7 +101,7 @@ ImportError: ('Unable to load OpenGL library',
 
 为此，长期的解决方法是等待接下来的 Python 更新。短期的解决方法是改变 `PyOpenGL` 的读取位置，步骤如下：
 
-1. 找到 Python 下 `PyOpenGL` 的文件 `OpenGL/platform/ctypesloader.py`，并且在做出任何改动之前做好完整的备份
+1. 找到 Python 下 `PyOpenGL` 的文件 *OpenGL/platform/ctypesloader.py*，并且在做出任何改动之前做好完整的备份
 2. 找到其中的 `fullName = util.find_library(name)`
 3. 把它更改为 
    ```python
@@ -127,7 +118,7 @@ ImportError: ('Unable to load OpenGL library',
 
 ### 📌 2.2 `LaTeX` 问题
 
-具体 $\LaTeX$ 问题请见旧版常见问题文档“manim 常见问题 v3.1”
+具体 $\LaTeX$ 问题请见旧版常见问题文档 [“manim 常见问题 v3.1”](/problems/manim-cairo)
 
 #### Q1: 如何使用中文
 
@@ -143,7 +134,7 @@ tex:
   intermediate_filetype: xdv
 ```
 
-如果想要使用 $\LaTeX$ 生成自定义字体[<sup>5</sup>](#dc75c2)，请在 `tex_templates/ctex_template.tex` 文件的 `\linespread{1}` 的上面添加以下两行代码
+如果想要使用 $\LaTeX$ 生成自定义字体[<sup id="quote-05">5</sup>](#ref-05)，请在 *tex_templates/ctex_template.tex* 文件的 `\linespread{1}` 的上面添加以下两行代码
 
 ```tex
 \usepackage{xeCJK}
@@ -152,13 +143,9 @@ tex:
 
 另外也请注意，`Text` 和 `TexText` 不同，具体区别下面会提到。
 
-<div id="dc75c2"></div>
-
-> [5] 来自[暗星](https://space.bilibili.com/4694767)的教程 <https://www.bilibili.com/video/BV1D5411s7bR>
-
 #### Q2: 怎么检测少了哪个包
 
-尝试运行群文件“**入群必看！！**”中的 [`check_latex_packages.py`](/download/check_xelatex_packages.py) 文件，其中哪个包检查后为 `failed`，则缺少了哪个包。可以安装这个包，或者不必要的话将其从 `ctex_template.tex` 中删除。
+尝试运行群文件“**入群必看！！**”中的 [*check_latex_packages.py*](/download/check_xelatex_packages.py) 文件，其中哪个包检查后为 `failed`，则缺少了哪个包。可以安装这个包，或者不必要的话将其从 *ctex_template.tex* 中删除。
 
 #### Q3: 未设置 `temporary_storage` 导致的问题
 
@@ -189,7 +176,7 @@ tex:
 
 #### Q1: `-pl` 选项不能用了怎么办
 
-在新版中，命令行参数有了很大改变。`-p` 选项已经变成了**演讲者模式**，取而代之的是 `-o` 选项（在保存文件后打开文件）。目前常用的选项如下[<sup>6</sup>](#bc139b)：
+在新版中，命令行参数有了很大改变。`-p` 选项已经变成了**演讲者模式**，取而代之的是 `-o` 选项（在保存文件后打开文件）。目前常用的选项如下[<sup id="quote-06">6</sup>](#ref-06)：
 
 - `-w` 将场景写入视频文件
 - `-o` 将场景写入文件，并打开
@@ -197,9 +184,6 @@ tex:
 - `-s` 与 `-o` 连用（`-s -o` 或 `-so`），保存并打开视频最后一帧
 - `manimgl -h` 查看常用命令参数
 
-<div id="bc139b"></div>
-
-> [6] 全部选项见文档: [参数配置](https://docs.manim.org.cn/getting_started/configuration.html#id4)
 
 #### Q2: 怎么调整导出画质
 
@@ -292,18 +276,11 @@ text = Text(
 
 #### Q2: 三个版本 `manim` 的安装途径和命令怎么区分
 
-| manim 版本                          | 包名称 (pypi) | 导入[<sup>7</sup>](#2913ae) | 命令[<sup>8</sup>](#2913ae) |
+| manim 版本                          | 包名称 (pypi) | 导入[<sup id="quote-07">7</sup>](#ref-07) | 命令[<sup id="quote-08">8</sup>](#ref-08) |
 | ----------------------------------- | ------------- | ---------------------------- | ---------------------------- |
-| 3b1b 新版[<sup>9</sup>](#2913ae)   | manimgl       | `manimlib`                   | `manimgl`                    |
+| 3b1b 新版[<sup id="quote-09">9</sup>](#ref-09)   | manimgl       | `manimlib`                   | `manimgl`                    |
 | community 版本                      | manim         | `manim`                      | `manim`                      |
-| 3b1b 旧版[<sup>10</sup>](#2913ae) | manimlib      | `manimlib.imports`           | `python manim.py`            |
-
-<div id="2913ae"></div>
-
-> [7] 指 `from < 导入 > import *`\
-> [8] 指在终端，后接包含要渲染场景的 `py` 文件\
-> [9] `3b1b/manim` `master` 分支\
-> [10] `3b1b/manim` `cairo-backend` 分支
+| 3b1b 旧版[<sup id="quote-10">10</sup>](#ref-10) | manimlib      | `manimlib.imports`           | `python manim.py`            |
 
 #### Q3: 带透明度的 `png` 图片背景为黑色怎么办
 
@@ -324,13 +301,15 @@ text = Text(
 > 3. 虽为 manim 交流群, 但不要一有问题就提出来, 简单的问题能自己解决最好, 不能解决时再寻求帮助
 > 4. 群主和管理员平时较忙, 有时若不能及时回复敬请谅解
 
-## 5. 附：ChangeLog
+## 5. 附录
 
-### v 1.0
+### 更新日志
+
+#### v 1.0
 
 - 开始为新版 `manim` 编写常见问题文档
 
-### v 1.1
+#### v 1.1
 
 - 更新中文文档的网址到 manim.wiki
 - 新增为 $\LaTeX$ 修改默认字体到方法
@@ -339,7 +318,7 @@ text = Text(
 - 新增了版本区分的相关内容
 - 新增了两个其他问题 Q3、Q4
 
-### v 1.2
+#### v 1.2
 
 - 更新中文文档网址到 manim.org.cn
 - 修复了 pip 安装时的 versioning 问题
@@ -349,5 +328,18 @@ text = Text(
 - 新增了中文 `Text` 字体问题
 - 添加了线条不显示问题的解决方法
 - 新增了获取版本的方法
+
+### 5.2. 脚注
+
+- <span id="ref-01"></span>[[1]](#quote-01) Manim-Kindergarten QQ 群 862671480
+- <span id="ref-02"></span>[[2]](#quote-02) 入群问题：<https://b23.tv/KmAvsG>
+- <span id="ref-03"></span>[[3]](#quote-03) 即新版本 `manim`，原 `shaders` 分支版本
+- <span id="ref-04"></span>[[4]](#quote-04) 国内可以使用 `git clone https://github.com.cnpmjs.org/3b1b/manim.git`，速度更快
+- <span id="ref-05"></span>[[5]](#quote-05) 来自[暗星](https://space.bilibili.com/4694767)的教程 <https://www.bilibili.com/video/BV1D5411s7bR>
+- <span id="ref-06"></span>[[6]](#quote-06) 全部选项见文档: [参数配置](https://docs.manim.org.cn/getting_started/configuration.html#id4)
+- <span id="ref-07"></span>[[7]](#quote-07) 指 `from < 导入 > import *`
+- <span id="ref-08"></span>[[8]](#quote-08) 指在终端，后接包含要渲染场景的 `py` 文件
+- <span id="ref-09"></span>[[9]](#quote-09) `3b1b/manim` `master` 分支
+- <span id="ref-10"></span>[[10]](#quote-10) `3b1b/manim` `cairo-backend` 分支
 
 <Back url='/docs' />

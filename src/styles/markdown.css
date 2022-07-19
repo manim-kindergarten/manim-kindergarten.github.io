@@ -1,6 +1,7 @@
 /* https://github.com/antfu/prism-theme-vars */
 @import 'prism-theme-vars/base.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
 .prose {
@@ -78,4 +79,12 @@ html.dark .prose {
 
 .prose ol>li>ol>li>ol {
   list-style-type: lower-latin !important;
+}
+
+.prose :where(:not(pre) > code):not(.not-prose)::before, .prose :where(:not(pre) > code):not(.not-prose)::after {
+  content: "" !important;
+}
+
+.prose :where(code):not(.not-prose) {
+  font-family: 'JetBrains Mono', monospace !important;
 }

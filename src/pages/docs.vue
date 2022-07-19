@@ -33,7 +33,10 @@ const data: CardData[] = [
   {
     title: 'docs.manim-cairo-faq.title',
     description: 'docs.manim-cairo-faq.description',
-    action: [{ label: 'Download', icon: 'i-carbon-download', url: `${downloadPath}/download/manim-faq/manim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98v3.1.pdf` }],
+    action: [
+      { label: 'Go', icon: 'i-ri-links-fill', url: '/problems/manim-cairo' },
+      { label: 'Download', icon: 'i-carbon-download', url: `${downloadPath}/download/manim-faq/manim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98v3.1.pdf` },
+    ],
     previous: [
       { label: 'v3.0', link: `${downloadPath}/download/manim-faq/manim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98v3.0.pdf` },
       { label: 'v2.3', link: `${downloadPath}/download/manim-faq/manim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98v2.3.pdf` },

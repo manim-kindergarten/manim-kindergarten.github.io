@@ -34,7 +34,7 @@ export default defineConfig({
       template: {
         compilerOptions: {
           // 消除 markdwn it 中 KaTeX 内部的警告
-          isCustomElement: tag => ['mtext', 'annotation', 'mtext-inline', 'semantics', 'mrow', 'math', 'mo', 'mn'].includes(tag),
+          isCustomElement: tag => ['mtext', 'annotation', 'mtext-inline', 'semantics', 'mrow', 'math', 'mo', 'mn', 'mi', 'mstyle', 'mtd', 'mtr', 'mtable'].includes(tag),
         },
       },
     }),
