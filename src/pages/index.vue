@@ -16,6 +16,7 @@ const { t } = useI18n()
   </div>
   <div
     text-xl sm:text-2xl lg:text-3xl
+    my-2xl
     flex justify-center
     animate-fade-in animate-count-1
   >
