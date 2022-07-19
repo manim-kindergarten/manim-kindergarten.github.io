@@ -414,7 +414,7 @@ class TestHarmony(Scene):
 
 ```latex
 \documentclass[preview, dvisvgm]{standalone}
- \usepackage{tikz}
+\usepackage{tikz}
 ```
 
 新建 py 文件，写入代码来画一条线
