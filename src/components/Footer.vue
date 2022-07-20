@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <footer mt-xl>
+  <footer py-xl>
     Copyright © {{ new Date().getFullYear() }} Manim Kindergarten
   </footer>
 </template>
