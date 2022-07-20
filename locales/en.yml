@@ -1,0 +1,80 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+  docs: Documentation
+  tools: Tool box
+intro:
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+not-found: Not found
+index:
+  links:
+    github:
+      description: Orgnization
+    qq:
+      description: |
+        862671480 Tech Group
+        1034267197 Chat Group
+    member:
+      description: Member list
+    bilibili:
+      description: Public tag
+    youtube:
+      description: Orgnization account
+    telegram:
+      description: For chats
+    discord:
+      description: For chats
+docs:
+  previous: Previous versions
+  chinese-tutorial-document: 
+    title: Chinese Tutorial Document
+    description: From introductory to advanced —— a one-stop tutorial document.
+  persuade-to-quit-manim:
+    title: Persuade to quit Manim
+    description: Contains all kinds of difficulties that need to be faced in learning manim
+  manim-cairo-faq:
+    title: Manim cairo backend FAQ
+    description: Frequently asked questions in the old version of manim.
+  manimgl-faq:
+    title: ManimGL FAQ
+    description: Frequently asked questions in the new version of manim (manimgl).
+  manim-with-vscode:
+    title: Manim with VSCode configuration guide
+    description: Tutorial for configuring running and debugging manim in VSCode.
+  manim-usage-changes:
+    title: Manim usage changes in the new version
+    description: Manim usage changes in the new version (manimgl).
+  structure-cairo:
+    title: The structure of manim cairo
+    description: The inheritance structure of the classes in manim cairo backend.
+  structure-gl:
+    title: The structure of manimgl
+    description: The inheritance structure of the classes in manimgl.
+tools:
+  color-tools:
+    title: Color's tools
+    description: RGB and hex conversion, color selection tool
+  check-xelatex-packages:
+    title: check_xelatex_packages.py
+    description: Check whether the xelatex dependencies required by manim are installed.
+  check-manim-dependencies:
+    title: check_manim_dependencies.py
+    description: Check whether all dependencies required by manim are installed.
+manim-builtin-colors: Manim built-in colors
+Go: Go
+Download: Download
+New: New
+Old: Old
+membership:
+  core-members: Core members
+  bilibili-video-creators: Bilibili video creators
+  special-thanks: Special thanks
+toc: Contents
