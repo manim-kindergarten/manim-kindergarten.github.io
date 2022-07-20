@@ -1,0 +1,7 @@
+export const BLUE_A = '#ace0ee'
+export const BLUE_B = '#58c4dd'
+export const BLUE_D = '#29abca'
+export const BROWN_A = '#e2ccbc'
+export const BROWN_B = '#c59978'
+export const BROWN_D = '#8d5630'
+export const WHITE = '#fff'

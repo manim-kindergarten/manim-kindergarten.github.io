@@ -1,134 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <title>Manim Kindergarten</title>
-
-        <!-- Bootstrap core CSS -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="shortcut icon" href="assets/mk.png" />
-        <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Righteous&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:600,700&display=swap">
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.2/css/all.min.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXSPJK4SMR"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'G-VXSPJK4SMR');
-        </script>
-        <script>
-            var _hmt = _hmt || [];
-            (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?792223e0884b24cf20e60780f22efbb4";
-                var s = document.getElementsByTagName("script")[0]; 
-                s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-    </head>
-    <body class="text-center" style="box-shadow: inset 0 0 4rem rgba(0, 0, 0, 0.2);">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <div class="inner">
-                    <h3 class="masthead-brand">
-                        <a class="title-link" href="#">
-                            <span style="color: #8D5630">M</span>anim <span style="color: #29ABCA">K</span>indergarten
-                        </a>
-                    </h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#"><i class="fas fa-home"></i><span class="fn">&nbsp主页</span></a>
-                        <a class="nav-link" href="docs.html"><i class="fas fa-book"></i><span class="fn">&nbsp文档</span></a>
-                        <a class="nav-link" href="tools.html"><i class="fas fa-cog"></i><span class="fn">&nbsp工具</span></a>
-                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i><span class="fn">&nbsp关于</span></a>
-                    </nav>
-                </div>
-            </header>
-
-            <main role="main" class="inner cover">
-                <div class="w-100 s-1" style="display: none">
-                    <img class="logo" src="assets/mk.svg" />
-                </div>
-                <div class="s-1" style="display: none">
-                    <h1 class="cover-heading" style="line-height: 2.5; display: flex; align-items: center; justify-content: center;">
-                        <a class="main-link" href="https://github.com/manim-kindergarten/" 
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>GitHub</b><br/>组织账号">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="main-link" href="https://jq.qq.com/?_wv=1027&k=UmWJvQi6"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>QQ</b><br/>862671480：技术群<br/>1034267197：闲聊群">
-                            <i class="fab fa-qq"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="bili-link" href="https://t.bilibili.com/topic/13699898/feed"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>BiliBili</b><br/>无公共账号，有tag">
-                            <i class="iconfont icon-bilibili-line"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="main-link" href="membership.html"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>成员列表</b>">
-                            <i class="fa fa-user-circle"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="main-link" href="https://youtube.com/channel/UCk1nsj8AvzuSVL_I4JieVNQ"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>YouTube</b><br/>公共账号">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="main-link" href="https://t.me/manimkindergarten"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>Telegram</b><br/>闲聊为主">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <span style="color: #888;">&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                        <a class="main-link" href="https://discord.gg/w53Pgudbzr"
-                            data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                            title="<b>Discord</b><br/>闲聊为主">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </h1>
-                </div>
-            </main>
-
-            <div>
-                <a href="en/index.html" class="btn changelang">
-                    English
-                </a>
-            </div>
-
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <p>
-                        Copyright &copy; 2021
-                        <strong>Manim Kindergarten</strong>
-                    </p>
-                </div>
-            </footer>
-        </div>
-        <script>
-            $(() => {
-                setTimeout(() => {
-                    $(".s-1").fadeIn(1000);
-                }, 300);
-            });
-        </script>
-        <script>
-            $(function () { $("[data-toggle='tooltip']").tooltip(); });
-        </script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/pwa-192x192.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+</head>
+<body class="font-sans">
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
