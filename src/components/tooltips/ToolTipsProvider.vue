@@ -8,9 +8,14 @@ withDefaults(defineProps<{
 let tipOpacity = $ref(0)
 let tipContent = $ref('')
 const tipPosition = reactive({ x: 0, y: 0 })
+let timeout: NodeJS.Timeout | null = null
 
 const onLeave = () => {
   tipOpacity = 0
+  timeout = setTimeout(() => {
+    tipPosition.x = 0
+    tipPosition.y = 0
+  }, 300)
 }
 
 const refreshTipContent = (content: string) => {
@@ -19,6 +24,10 @@ const refreshTipContent = (content: string) => {
 }
 
 const onEnter = (e: MouseEvent, description: string) => {
+  if (timeout) {
+    clearTimeout(timeout)
+    timeout = null
+  }
   tipContent = description
   tipPosition.x = (e.target as HTMLElement).offsetLeft + (e.target as HTMLElement).clientWidth / 2
   tipPosition.y = (e.target as HTMLElement).offsetTop + (e.target as HTMLElement).offsetHeight + 10
