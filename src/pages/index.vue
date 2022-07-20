@@ -11,8 +11,8 @@ const { t } = useI18n()
     p-2xl lg:p-0
     class="animate-fadein-shift-y--2-1000"
   >
-    <img v-if="!isDark" src="/favicon.svg">
-    <img v-else src="/favicon-dark.svg">
+    <img v-if="!isDark" src="https://cdn.tonycrane.cc/mkhome/favicon.svg">
+    <img v-else src="https://cdn.tonycrane.cc/mkhome/favicon-dark.svg">
   </div>
   <div
     text-xl sm:text-2xl lg:text-3xl
