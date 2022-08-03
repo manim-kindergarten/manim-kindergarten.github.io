@@ -17,7 +17,7 @@ defineProps<{
   <pure-card :title="title" :delay="delay" ma>
     <template #header-extra>
       <div flex>
-        <a v-for="(a, i) of action" :key="i" flex btn text-sm ml-2 :href="a.url" :title="t(a.label)">
+        <a v-for="(a, i) of action" :key="i" flex icon-btn class="xs:(btn op-100)" text-sm ml-2 items-center :href="a.url" :title="t(a.label)">
           <div display-none sm:block mr-1>{{ t(a.label) }}</div>
           <div :class="a.icon" />
         </a>

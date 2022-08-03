@@ -85,6 +85,12 @@ html.dark .prose {
   content: "" !important;
 }
 
+.prose :where(:not(pre) > code):not(.not-prose) {
+  background: rgba(192, 192, 192, 0.175) !important;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
 .prose :where(code):not(.not-prose) {
   font-family: 'JetBrains Mono', monospace !important;
 }
