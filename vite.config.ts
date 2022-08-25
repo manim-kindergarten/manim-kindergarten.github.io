@@ -14,13 +14,17 @@ import Inspector from 'vite-plugin-vue-inspector'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
+// @ts-expect-error declaration
 import markdownItKatex from 'markdown-it-new-katex'
 import markdownItAnchor from 'markdown-it-anchor'
+// @ts-expect-error declaration
 import markdownItTableOfContents from 'markdown-it-table-of-contents'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
+  base: '/manim-kindergarten.github.io/',
+
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
