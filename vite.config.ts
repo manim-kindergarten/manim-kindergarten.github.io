@@ -23,8 +23,6 @@ import markdownItTableOfContents from 'markdown-it-table-of-contents'
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
-  base: '/manim-kindergarten.github.io/',
-
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
