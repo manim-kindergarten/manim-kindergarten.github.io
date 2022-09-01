@@ -1,1 +1,0 @@
-import{d as n,u as r,o as s,c as u,f as a}from"./app.2a6d0fe4.js";const c=["href"],i=n({__name:"Back",props:{url:null},setup(e){const t=r();return(l,o)=>(s(),u("a",{href:e.url||"#","text-sm":"",flex:"","font-mono":"",onClick:o[0]||(o[0]=f=>e.url===void 0?a(t).back():()=>{})}," ../ ",8,c))}});export{i as _};
