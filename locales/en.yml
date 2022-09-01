@@ -17,7 +17,7 @@ not-found: Not found
 index:
   links:
     github:
-      description: Orgnization
+      description: Organization
     qq:
       description: |
         862671480 Tech Group
@@ -27,7 +27,7 @@ index:
     bilibili:
       description: Public tag
     youtube:
-      description: Orgnization account
+      description: Organization account
     telegram:
       description: For chats
     discord:
