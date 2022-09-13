@@ -102,8 +102,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Manim Kindergarten',
+        short_name: 'MK',
         theme_color: '#ffffff',
         icons: [
           {
