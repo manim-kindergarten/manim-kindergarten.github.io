@@ -19,6 +19,8 @@ import markdownItKatex from 'markdown-it-new-katex'
 import markdownItAnchor from 'markdown-it-anchor'
 // @ts-expect-error declaration
 import markdownItTableOfContents from 'markdown-it-table-of-contents'
+// @ts-expect-error declaration
+import markdownItFootnote from 'markdown-it-footnote'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -92,6 +94,7 @@ export default defineConfig({
         })
         md.use(markdownItKatex)
         md.use(markdownItAnchor)
+        md.use(markdownItFootnote)
         md.use(markdownItTableOfContents, {
           includeLevel: [2, 3, 4],
           containerHeaderHtml: '<h3>Contents</h3>',
