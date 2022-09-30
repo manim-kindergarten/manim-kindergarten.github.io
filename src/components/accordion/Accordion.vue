@@ -57,8 +57,8 @@ const renderBody = () => h(
     h('div', {
       class: {
         'max-h-0 scale-y-0': it.props?.name !== checkedRow,
-        'p-8 max-h-400': it.props?.name === checkedRow,
-        'transition-max-h duration-500': true,
+        'p-4 max-h-400': it.props?.name === checkedRow,
+        'transition-all duration-500': true,
       },
     }, it),
   ])),
