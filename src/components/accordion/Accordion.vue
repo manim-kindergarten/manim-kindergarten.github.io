@@ -47,21 +47,26 @@ const renderBody = () => h(
     },
     border: '~ rounded zinc-200 dark:zinc-700',
   },
-  slots.default && slots.default().map(it => h('div', {
-    class: {
-      'overflow-hidden transition-all duration-500': true,
-    },
-  },
-  [
-    renderButton(it.props?.name, it.props?.title),
-    h('div', {
+  slots.default && slots.default().map(it => h('div',
+    {
       class: {
-        'max-h-0 scale-y-0': it.props?.name !== checkedRow,
-        'max-h-400': it.props?.name === checkedRow,
-        'transition-all duration-500': true,
+        'overflow-hidden transition-all duration-500': true,
       },
-    }, it),
-  ])),
+    },
+    [
+      renderButton(it.props?.name, it.props?.title),
+      h('div',
+        {
+          class: {
+            'scale-y-0 transform-origin-top': it.props?.name !== checkedRow,
+            'transition-all duration-500': true,
+          },
+          style: {
+            maxHeight: it.props?.name !== checkedRow ? '0rem' : '100rem',
+          },
+        }, it),
+    ]),
+  ),
 )
 
 </script>
