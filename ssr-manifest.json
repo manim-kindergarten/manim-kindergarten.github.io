@@ -18,9 +18,6 @@
   "\u0000/home/runner/work/manim-kindergarten.github.io/manim-kindergarten.github.io/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [],
   "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [],
   "src/modules/nprogress.ts": [],
-  "node_modules/.pnpm/vue-demi@0.12.5_vue@3.2.37/node_modules/vue-demi/lib/index.mjs": [],
-  "node_modules/.pnpm/pinia@2.0.14_j6bzmzd4ujpabbp5objtwxyjp4/node_modules/pinia/dist/pinia.esm-browser.js": [],
-  "src/modules/pinia.ts": [],
   "vite/preload-helper": [],
   "src/modules/pwa.ts": [],
   "node_modules/.pnpm/vue-router@4.0.16_vue@3.2.37/node_modules/vue-router/dist/vue-router.esm-bundler.js": [],
@@ -51,7 +48,7 @@
   "../../../../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.f92f3c6f.js-unocss-hash.css": [],
+  "assets/app.d2a705a3.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.80a10119.js"
   ],
@@ -59,170 +56,170 @@
     "/assets/virtual_pwa-register.80a10119.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.5a16be41.js"
+    "/assets/404.cc1c120d.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.37d47d70.js"
+    "/assets/home.0d416e16.js"
   ],
   "src/pages/404.vue": [
-    "/assets/404.df7cab5f.js"
+    "/assets/404.3876cc00.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.56d8d223.js"
+    "/assets/_...all_.7f43a8dc.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.7aa54073.js"
+    "/assets/about.9f7e14ce.js"
   ],
   "src/pages/docs.vue": [
-    "/assets/docs.7ba23355.js"
+    "/assets/docs.c15b7475.js"
   ],
   "src/components/Card.vue": [
-    "/assets/downloadPath.a0e48b86.js"
+    "/assets/downloadPath.65d03ca0.js"
   ],
   "src/data/downloadPath.ts": [
-    "/assets/downloadPath.a0e48b86.js"
+    "/assets/downloadPath.65d03ca0.js"
   ],
   "src/components/PureCard.vue": [
-    "/assets/PureCard.dfcb60ef.js"
+    "/assets/PureCard.0ee24523.js"
   ],
   "src/components/AnimateComponent.vue": [
-    "/assets/AnimateComponent.e3c58af1.js"
+    "/assets/AnimateComponent.63b976b1.js"
   ],
   "src/components/accordion/Accordion.vue": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/components/accordion/AccordionRow.vue": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/components/Avatar.vue": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/data/core-members.json": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/data/up-members.json": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/data/thanks.json": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/pages/membership.vue": [
-    "/assets/membership.b239406a.js"
+    "/assets/membership.a7e850d8.js"
   ],
   "src/pages/tools.vue": [
-    "/assets/tools.1660b0c7.js"
+    "/assets/tools.a98e0868.js"
   ],
   "src/pages/en/about.md": [
-    "/assets/about.a53a8294.js"
+    "/assets/about.bcda3f15.js"
   ],
   "../../../../../assets/notes.png": [
-    "/assets/manim-cairo.a04d5e14.js"
+    "/assets/manim-cairo.0033de58.js"
   ],
   "../../../../../assets/plot_depth1.png": [
-    "/assets/manim-cairo.a04d5e14.js"
+    "/assets/manim-cairo.0033de58.js"
   ],
   "../../../../../assets/plot_depth2.png": [
-    "/assets/manim-cairo.a04d5e14.js"
+    "/assets/manim-cairo.0033de58.js"
   ],
   "../../../../../assets/gif-inserts.png": [
-    "/assets/manim-cairo.a04d5e14.js"
+    "/assets/manim-cairo.0033de58.js"
   ],
   "src/pages/problems/manim-cairo.md": [
-    "/assets/manim-cairo.a04d5e14.js"
+    "/assets/manim-cairo.0033de58.js"
   ],
   "src/components/canvas/colors.ts": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/useDescartes.ts": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/useTriangle.ts": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/MyCanvas.vue": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Logo.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Logo.vue": [
-    "/assets/Logo.516097f6.js",
+    "/assets/Logo.ad04c3b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Back.vue": [
-    "/assets/Back.de079321.js"
+    "/assets/Back.45164680.js"
   ],
   "../../../../../logo/turn_to_grant.jpg": [
     "/assets/turn_to_grant.d69f0649.js"
   ],
   "src/pages/problems/manimgl.md": [
-    "/assets/manimgl.3eb11374.js"
+    "/assets/manimgl.c236f6fb.js"
   ],
   "src/pages/problems/new_usage.md": [
-    "/assets/new_usage.72fd944d.js"
+    "/assets/new_usage.98c5e135.js"
   ],
   "src/pages/problems/persuade2quit.md": [
-    "/assets/persuade2quit.d7a68ded.js"
+    "/assets/persuade2quit.d63192e4.js"
   ],
   "src/components/tabs/Tabs.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/tabs/Tabs.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/tabs/TabPane.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/ClickCopy.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/tabRenderer.ts": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/data/manim-cairo-colors.json": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ManimColors.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/data/manimgl-colors.json": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ManimglColors.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/BuiltinColors.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ColorPicker.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/hex2rgb.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/rgb2hex.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ],
   "src/pages/tool/color.vue": [
-    "/assets/color.9497ea55.js",
+    "/assets/color.7899687d.js",
     "/assets/color.f4842313.css"
   ]
 }
