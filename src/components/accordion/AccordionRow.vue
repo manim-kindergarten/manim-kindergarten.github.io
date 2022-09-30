@@ -6,5 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <slot />
+  <div p-4>
+    <slot />
+  </div>
 </template>
