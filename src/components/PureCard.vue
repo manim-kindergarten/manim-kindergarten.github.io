@@ -18,11 +18,11 @@ defineProps<{
     :delay="delay"
   >
     <div
-      flex justify-between
+      flex justify-between items-center
       p-4
       bg-zinc-100 dark:bg-zinc-800
     >
-      <h2>{{ title }}</h2>
+      <div>{{ title }}</div>
       <slot name="header-extra" />
     </div>
     <slot />
