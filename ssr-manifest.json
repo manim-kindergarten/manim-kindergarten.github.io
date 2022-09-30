@@ -48,7 +48,7 @@
   "../../../../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.d2a705a3.js-unocss-hash.css": [],
+  "assets/app.b770c23b.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.80a10119.js"
   ],
@@ -56,170 +56,170 @@
     "/assets/virtual_pwa-register.80a10119.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.cc1c120d.js"
+    "/assets/404.f4265938.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.0d416e16.js"
+    "/assets/home.3513b06f.js"
   ],
   "src/pages/404.vue": [
-    "/assets/404.3876cc00.js"
+    "/assets/404.99b6b910.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.7f43a8dc.js"
+    "/assets/_...all_.57945398.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.9f7e14ce.js"
+    "/assets/about.1629ae34.js"
   ],
   "src/pages/docs.vue": [
-    "/assets/docs.c15b7475.js"
+    "/assets/docs.e4e416ac.js"
   ],
   "src/components/Card.vue": [
-    "/assets/downloadPath.65d03ca0.js"
+    "/assets/downloadPath.e785d705.js"
   ],
   "src/data/downloadPath.ts": [
-    "/assets/downloadPath.65d03ca0.js"
+    "/assets/downloadPath.e785d705.js"
   ],
   "src/components/PureCard.vue": [
-    "/assets/PureCard.0ee24523.js"
+    "/assets/PureCard.134287d4.js"
   ],
   "src/components/AnimateComponent.vue": [
-    "/assets/AnimateComponent.63b976b1.js"
+    "/assets/AnimateComponent.24e1d907.js"
   ],
   "src/components/accordion/Accordion.vue": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/components/accordion/AccordionRow.vue": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/components/Avatar.vue": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/data/core-members.json": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/data/up-members.json": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/data/thanks.json": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/pages/membership.vue": [
-    "/assets/membership.a7e850d8.js"
+    "/assets/membership.e88e691f.js"
   ],
   "src/pages/tools.vue": [
-    "/assets/tools.a98e0868.js"
+    "/assets/tools.2debf861.js"
   ],
   "src/pages/en/about.md": [
-    "/assets/about.bcda3f15.js"
+    "/assets/about.0e7ed4ef.js"
   ],
   "../../../../../assets/notes.png": [
-    "/assets/manim-cairo.0033de58.js"
+    "/assets/manim-cairo.ef00c195.js"
   ],
   "../../../../../assets/plot_depth1.png": [
-    "/assets/manim-cairo.0033de58.js"
+    "/assets/manim-cairo.ef00c195.js"
   ],
   "../../../../../assets/plot_depth2.png": [
-    "/assets/manim-cairo.0033de58.js"
+    "/assets/manim-cairo.ef00c195.js"
   ],
   "../../../../../assets/gif-inserts.png": [
-    "/assets/manim-cairo.0033de58.js"
+    "/assets/manim-cairo.ef00c195.js"
   ],
   "src/pages/problems/manim-cairo.md": [
-    "/assets/manim-cairo.0033de58.js"
+    "/assets/manim-cairo.ef00c195.js"
   ],
   "src/components/canvas/colors.ts": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/useDescartes.ts": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/useTriangle.ts": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/canvas/MyCanvas.vue": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Logo.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Logo.vue": [
-    "/assets/Logo.ad04c3b0.js",
+    "/assets/Logo.5d9075b0.js",
     "/assets/Logo.1465b54c.css"
   ],
   "src/components/Back.vue": [
-    "/assets/Back.45164680.js"
+    "/assets/Back.e68b39bf.js"
   ],
   "../../../../../logo/turn_to_grant.jpg": [
     "/assets/turn_to_grant.d69f0649.js"
   ],
   "src/pages/problems/manimgl.md": [
-    "/assets/manimgl.c236f6fb.js"
+    "/assets/manimgl.7489833f.js"
   ],
   "src/pages/problems/new_usage.md": [
-    "/assets/new_usage.98c5e135.js"
+    "/assets/new_usage.00e6f29b.js"
   ],
   "src/pages/problems/persuade2quit.md": [
-    "/assets/persuade2quit.d63192e4.js"
+    "/assets/persuade2quit.2fba91ca.js"
   ],
   "src/components/tabs/Tabs.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/tabs/Tabs.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/tabs/TabPane.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/ClickCopy.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/tabRenderer.ts": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/data/manim-cairo-colors.json": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ManimColors.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/data/manimgl-colors.json": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ManimglColors.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/BuiltinColors.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/ColorPicker.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/hex2rgb.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/components/color_tool/rgb2hex.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ],
   "src/pages/tool/color.vue": [
-    "/assets/color.7899687d.js",
+    "/assets/color.e797f185.js",
     "/assets/color.f4842313.css"
   ]
 }
