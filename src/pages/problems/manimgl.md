@@ -13,9 +13,14 @@
 
 ## 一切之前
 
-`manim` 是一个使用 `python` 制作视频的动画引擎。学习它你首先要会一点 `python`，至少要学会 `python` 的基础语法、模块的调用以及类的基础知识（如果想要阅读源码，还需要掌握更多 `python` 面向对象的知识）。没有 `python` 的知识学 manim 是毫无意义的，会非常吃力，也会遇到非常多的问题。学会了 `python` 之后便可以少走非常多的弯路，这也是我们的忠告。因此，加入我们 Manim-Kindergarten[<sup id="quote-01">1</sup>](#ref-01) 首先要会使用 `python`，我们会在入群问题[<sup id="quote-02">2</sup>](#ref-02)中进行一个最基础的检测。
+`manim` 是一个使用 `python` 制作视频的动画引擎。学习它你首先要会一点 `python`，至少要学会 `python` 的基础语法、模块的调用以及类的基础知识（如果想要阅读源码，还需要掌握更多 `python` 面向对象的知识）。没有 `python` 的知识学 manim 是毫无意义的，会非常吃力，也会遇到非常多的问题。学会了 `python` 之后便可以少走非常多的弯路，这也是我们的忠告。因此，加入我们 Manim-Kindergarten[^1] 首先要会使用 `python`，我们会在入群问题[^2]中进行一个最基础的检测。
 
-**最后，本常见问题文档基于 manim 的 master 分支版本[<sup id="quote-03">3</sup>](#ref-03)，此文档中未出现的问题可能在旧版也会有同样问题，所以推荐两个常见问题文档一起查阅。**
+[^1]: Manim-Kindergarten QQ 群 862671480
+[^2]: 入群问题：<https://b23.tv/KmAvsG>
+
+**最后，本常见问题文档基于 manim 的 master 分支版本[^3]，此文档中未出现的问题可能在旧版也会有同样问题，所以推荐两个常见问题文档一起查阅。**
+
+[^3]: 即新版本 `manim`，原 `shaders` 分支版本
 
 ### 如何提问
 
@@ -83,8 +88,9 @@ CMake must be installed to build the following extensions
 
 #### Q4: `pip install -e .` 时抛出 `Exception:Versioning for ...` 异常
 
-该问题已在 [#1565](https://github.com/3b1b/manim/pull/1565) 修复。目前可以通过 `git clone https://github.com/3b1b/manim.git`[<sup id="quote-04">4</sup>](#ref-04) 克隆下源码，也可通过下载 zip 后用 `pip install -e .` 命令安装。
+该问题已在 [#1565](https://github.com/3b1b/manim/pull/1565) 修复。目前可以通过 `git clone https://github.com/3b1b/manim.git`[^4]克隆下源码，也可通过下载 zip 后用 `pip install -e .` 命令安装。
 
+[^4]: 国内可以使用 `git clone https://github.com.cnpmjs.org/3b1b/manim.git`，速度更快
 
 ## 2. 运行时问题
 
@@ -134,7 +140,9 @@ tex:
   intermediate_filetype: xdv
 ```
 
-如果想要使用 $\LaTeX$ 生成自定义字体[<sup id="quote-05">5</sup>](#ref-05)，请在 *tex_templates/ctex_template.tex* 文件的 `\linespread{1}` 的上面添加以下两行代码
+如果想要使用 $\LaTeX$ 生成自定义字体[^5]，请在 *tex_templates/ctex_template.tex* 文件的 `\linespread{1}` 的上面添加以下两行代码
+
+[^5]: 来自[暗星](https://space.bilibili.com/4694767)的教程 <https://www.bilibili.com/video/BV1D5411s7bR>
 
 ```tex
 \usepackage{xeCJK}
@@ -176,7 +184,9 @@ tex:
 
 #### Q1: `-pl` 选项不能用了怎么办
 
-在新版中，命令行参数有了很大改变。`-p` 选项已经变成了**演讲者模式**，取而代之的是 `-o` 选项（在保存文件后打开文件）。目前常用的选项如下[<sup id="quote-06">6</sup>](#ref-06)：
+在新版中，命令行参数有了很大改变。`-p` 选项已经变成了**演讲者模式**，取而代之的是 `-o` 选项（在保存文件后打开文件）。目前常用的选项如下[^6]：
+
+[^6]: 全部选项见文档: [参数配置](https://docs.manim.org.cn/getting_started/configuration.html#id4)
 
 - `-w` 将场景写入视频文件
 - `-o` 将场景写入文件，并打开
@@ -276,11 +286,16 @@ text = Text(
 
 #### Q2: 三个版本 `manim` 的安装途径和命令怎么区分
 
-| manim 版本                          | 包名称 (pypi) | 导入[<sup id="quote-07">7</sup>](#ref-07) | 命令[<sup id="quote-08">8</sup>](#ref-08) |
+| manim 版本                          | 包名称 (pypi) | 导入[^7] | 命令[^8] |
 | ----------------------------------- | ------------- | ---------------------------- | ---------------------------- |
-| 3b1b 新版[<sup id="quote-09">9</sup>](#ref-09)   | manimgl       | `manimlib`                   | `manimgl`                    |
+| 3b1b 新版[^9]   | manimgl       | `manimlib`                   | `manimgl`                    |
 | community 版本                      | manim         | `manim`                      | `manim`                      |
-| 3b1b 旧版[<sup id="quote-10">10</sup>](#ref-10) | manimlib      | `manimlib.imports`           | `python manim.py`            |
+| 3b1b 旧版[^10] | manimlib      | `manimlib.imports`           | `python manim.py`            |
+
+[^7]: 指 `from < 导入 > import *`
+[^8]: 指在终端，后接包含要渲染场景的 `py` 文件
+[^9]: `3b1b/manim` `master` 分支
+[^10]: `3b1b/manim` `cairo-backend` 分支
 
 #### Q3: 带透明度的 `png` 图片背景为黑色怎么办
 
@@ -329,17 +344,5 @@ text = Text(
 - 添加了线条不显示问题的解决方法
 - 新增了获取版本的方法
 
-### 5.2. 脚注
-
-- <span id="ref-01"></span>[[1]](#quote-01) Manim-Kindergarten QQ 群 862671480
-- <span id="ref-02"></span>[[2]](#quote-02) 入群问题：<https://b23.tv/KmAvsG>
-- <span id="ref-03"></span>[[3]](#quote-03) 即新版本 `manim`，原 `shaders` 分支版本
-- <span id="ref-04"></span>[[4]](#quote-04) 国内可以使用 `git clone https://github.com.cnpmjs.org/3b1b/manim.git`，速度更快
-- <span id="ref-05"></span>[[5]](#quote-05) 来自[暗星](https://space.bilibili.com/4694767)的教程 <https://www.bilibili.com/video/BV1D5411s7bR>
-- <span id="ref-06"></span>[[6]](#quote-06) 全部选项见文档: [参数配置](https://docs.manim.org.cn/getting_started/configuration.html#id4)
-- <span id="ref-07"></span>[[7]](#quote-07) 指 `from < 导入 > import *`
-- <span id="ref-08"></span>[[8]](#quote-08) 指在终端，后接包含要渲染场景的 `py` 文件
-- <span id="ref-09"></span>[[9]](#quote-09) `3b1b/manim` `master` 分支
-- <span id="ref-10"></span>[[10]](#quote-10) `3b1b/manim` `cairo-backend` 分支
 
 <Back url='/docs' />
