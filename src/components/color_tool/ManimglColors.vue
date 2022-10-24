@@ -2,7 +2,7 @@
 import * as manimglColors from '~/data/manimgl-colors.json'
 import { renderTabContainer } from '~/components/color_tool/tabRenderer'
 
-const r = renderTabContainer(manimglColors.data, 'manimgl-colors')
+const r = () => renderTabContainer(manimglColors.data, 'manimgl-colors')
 
 </script>
 

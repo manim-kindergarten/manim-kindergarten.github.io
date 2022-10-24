@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     BuiltinColors: typeof import('./components/color_tool/BuiltinColors.vue')['default']
     Card: typeof import('./components/Card.vue')['default']
     ClickCopy: typeof import('./components/ClickCopy.vue')['default']
+    ColorButton: typeof import('./components/color_tool/ColorButton.vue')['default']
     ColorPicker: typeof import('./components/color_tool/ColorPicker.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
