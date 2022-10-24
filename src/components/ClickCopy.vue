@@ -13,6 +13,10 @@ const clickCopy = () => {
 const cancelCopy = () => {
   setTimeout(() => { copyed = false }, 1000)
 }
+
+const emits = defineEmits<{
+  (e: 'content-clicked', value: string): void
+}>()
 </script>
 
 <template>
@@ -20,7 +24,7 @@ const cancelCopy = () => {
     leading-none
     @mouseleave="cancelCopy"
   >
-    <span mr-1>
+    <span mr-1 @click="emits('content-clicked', content)">
       {{ content }}
     </span>
     <span v-if="!copyed" leading-none icon-btn text-sm class="i-carbon-copy animate-fadein-shift-x-1-300" @click="clickCopy" />

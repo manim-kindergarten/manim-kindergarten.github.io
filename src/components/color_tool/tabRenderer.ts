@@ -1,7 +1,7 @@
 // @unocss-include
 import TabPane from '~/components/tabs/TabPane.vue'
 import Tabs from '~/components/tabs/Tabs.vue'
-import ClickCopy from '~/components/ClickCopy.vue'
+import ColorButton from '~/components/color_tool/ColorButton.vue'
 
 export interface Color {
   name: string
@@ -15,13 +15,12 @@ export interface ColorStruct {
 
 export const renderColorCell = (c: Color) => {
   return h(
-    ClickCopy,
+    ColorButton,
     {
       content: c.name,
-      style: { backgroundColor: c.value, color: c.value === '#FFFFFF' || c.name.includes('YELLOW') ? '#000000' : '' },
-      class: 'btn m-1 shadow',
+      value: c.value,
     },
-    { default: () => c.name },
+    { },
   )
 }
 
