@@ -26,7 +26,7 @@ const { t } = useI18n()
     </AccordionRow>
     <AccordionRow name="ups" :title="t('membership.bilibili-video-creators')">
       <p color-zinc-300 dark:color-zinc-600 pb-2>
-        按照昵称拼音排序，如有遗漏请联系鹤翔万里
+        按照昵称拼音排序，如需加入名单请至 <a href="https://github.com/manim-kindergarten/manim-kindergarten.github.io/issues/9" target="_blank" underline>issues</a> 反馈
       </p>
       <ToolTipsProvider :gap="1">
         <ToolTip
